@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mmall-eureka-server
+server:
+  port: 7981
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: mmall-seller-server7981
+    hostname: mmall-eureka-server7981
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+    fetch-registry: false
+    register-with-eureka: false

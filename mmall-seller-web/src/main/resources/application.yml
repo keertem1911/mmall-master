@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mmall-seller-web
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8002
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: mmall-seller-server8002
+  client:
+    service-url:
+      defaultZone: http://mmall-eureka-server7981:7981/eureka
